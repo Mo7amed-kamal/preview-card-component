@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    background-color:rgb(10 12 27);
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*   Small */
+@media  (min-width:768px){
+    .container {
+        width: 750px;
+    }
+}
+/*    Medium    */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/*    Large       */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/*   End Global Rules     */
+.container {
+    background-color: rgb(28 25 56);
+    color: white;
+    border-radius: 15px;
+}
+.box {
+    margin-top: 70px;
+}
+@media (max-width: 767px) {
+    .box {
+        flex-direction: column;
+    }
+}
+.parent .info h2 {
+    font-weight: bold;
+}
+.parent .info h2 > span {
+    color: rgb(150 87 194);
+}
+
+.parent .info p {
+    line-height: 1.7;
+    font-size: 15px;
+    color: var(--grey-color);
+}
+
+.parent .icon  {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translatex(-50%);
+}
+@media (max-width: 767px) {
+    .parent .icon {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-right: 45px;
+    }
+}
+@media (max-width: 767px) {
+    .icon {
+        flex-direction: column;
+        margin: auto;
+    }
+    .info h2 {
+        font-size: 27px;
+        padding: 15px;
+    }
+}
+.parent .icon div {
+    padding:10px;
+}
+@media (max-width: 767px) {
+    .parent .icon div span {
+        display: block;
+        text-align: center;
+        margin-right: -2px;
+    }
+}
+.parent .icon  span {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.parent .photo .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(153 84 199 / 57%);
+}
+@media (max-width:767px) {
+    .parent .photo img {
+        max-width: 100%;
+    }
+}
+.parent .footer {
+    margin: auto;
+    margin-top: 16px;
+}
+.parent .footer span {
+    background-color: #ccc;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 4px;
+    border-radius: 10px;
+}
+@media (max-width: 767px) {
+    .parent .footer span {
+        font-size: 13px
+    }
+}
